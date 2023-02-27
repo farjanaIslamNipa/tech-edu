@@ -1,0 +1,1717 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "navBar.css";
+@import "footer.css";
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-8deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.page-wrapper {
+    animation: transitionIn 0.9s;
+}
+
+
+body {
+    font-family: var(--fontOpenSans);
+    animation: transitionIn 1s;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+:root {
+    --brandColor: #7162AB;
+    --primary-color: #CD1D23;
+    --orange: #F9A032;
+    --deepRed: #C53E3F;
+    --green: #108A4F;
+    --blue: #08A1E4;
+    --gold: #D5A529;
+    --purple: #9B00FF;
+    --fontBubblegum: 'Bubblegum Sans', cursive;
+    --fontOpenSans: 'Open Sans', sans-serif;
+}
+.text-brand{
+    color: var(--brandColor);
+}
+
+.bg-brand{
+    background-color: var(--brandColor);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fontBubblegum) !important;
+}
+@media(max-width: 575px){
+    .header-small{
+        font-size: 32px;
+    }
+}
+.text-orange{
+    color: var(--orange);
+}
+.text-deep-red{
+    color: var(--deepRed);
+}
+.text-green{
+    color: var(--green);
+}
+.text-blue{
+    color: var(--blue);
+}
+.text-gold{
+    color: var(--gold);
+}
+.text-purple{
+    color: var(--purple);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+.bg-custom-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-gray-white {
+    color: #ddd;
+}
+
+.text-700 {
+    font-weight: 700 !important;
+}
+
+.text-800 {
+    font-weight: 800 !important;
+}
+
+.text-300 {
+    font-weight: 300 !important;
+
+
+}
+
+.text-100 {
+    font-weight: 100 !important;
+
+}
+
+.text-500 {
+    font-weight: 500 !important;
+}
+
+.text-600 {
+    font-weight: 600 !important;
+}
+.text-16 {
+    font-size: 16px;
+}
+.text-17{
+    font-size: 17px;
+}
+
+.active{
+    color: var(--primary-color) !important;
+}
+.hover-brand:hover{
+    background-color: var(--brandColor);
+    transition: all 0.3s ease;
+}
+/* home page css starts */
+.text-18{
+    font-size: 18px;
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+.bg-gold{
+    background-color: var(--gold);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+/* banner css */
+.navbar-bg{
+    background-image: url('/images/frontEnd/nav/nav-bar.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999999;
+}
+.body-margin{
+    margin-top: 80px;
+}
+.home-banner {
+    background-image: url('/images/frontEnd/home/hero-banner.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 80px; */
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+.home-header-content{
+    padding-left: 80px;
+}
+
+.header-title{
+    font-size: 55px;
+    font-weight: 700;
+}
+.view-course-btn{
+    /* background-color: var(--brandColor);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative; */
+}
+/* .view-course-btn:hover{
+    background-color: var(--blue);
+    color: white;
+} */
+
+/* CSS */
+.view-course-btn {
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 6px 36px 20px 40px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.view-course-btn:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: white !important;
+  text-decoration: none;
+  border: 1px solid var(--blue);
+  transition: all 0.3s ease;
+}
+
+.view-course-btn:after {
+  background-color: #6069D8;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -8px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+  border-radius: 0px;
+}
+
+.view-course-btn:hover:after {
+  background-color: var(--blue);
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+@media(max-width:1499px){
+    .home-banner{
+        height: 650px;
+    }
+
+}
+@media(max-width:1440px){
+    .home-banner{
+        height: 600px;
+    }
+    .home-header-content{
+        padding-left: 120px;
+    }
+
+}
+@media(max-width:1199px){
+    .home-banner{
+        height: 550px;
+    }
+
+    .header-title{
+        font-size: 45px;
+    }
+}
+
+@media(max-width:1024px){
+    .home-banner{
+        height: 500px;
+    }
+    .header-title{
+        font-size: 45px;
+    }
+}
+@media(max-width:991px){
+    .home-banner{
+        height: 450px;
+    }
+    .home-header-content{
+        padding-left: 90px;
+    }
+    .header-title{
+        font-size: 40px;
+    }
+}
+@media(max-width:767px){
+    .home-banner{
+        background-image: url('/images/frontEnd/home/hero-banner-small.png');
+        height: 400px;
+        justify-content: center;
+    }
+    .home-header-content{
+        padding-left: 0;
+    }
+    .header-title{
+        font-size: 40px;
+    }
+}
+@media(max-width:380px){
+    .home-banner{
+        height: 350px;
+    }
+    .header-title{
+        font-size: 32px;
+    }
+}
+
+.skill-check-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    padding: 8px 15px;
+    text-decoration: none !important;
+}
+
+.SkillsForm-popup-section {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    padding: 15px 0px;
+}
+
+.SkillsForm-btn {
+    background-color: #8C1B1D;
+    padding: 5px 30px;
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.SkillsForm-popup-wrapper {
+    /* width: 40%; */
+    padding: 0px 20px;
+}
+
+.banner-image {
+    /* height: 100%;
+    width: 100%; */
+}
+
+
+/* banner css */
+
+
+
+
+/* summery section  */
+.summery-bg {
+    background: #242424;
+    background-color: #262523;
+    background-image: url('/images/global/bg-computer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+    height: 200px;
+}
+
+/* summery ends  */
+
+
+
+/* skill test section starts */
+.home-slider-bg {
+    background-image: url('/images/frontEnd/home/search-slider-bg.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.carousel-indicators li {
+    background: inherit;
+    border: none;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators {
+    bottom: -55px !important;
+}
+
+.home-slider-description {
+    font-size: 1.1rem;
+    font-weight: 400 !important;
+    color: rgb(7, 7, 7);
+    min-height: 100px;
+}
+
+.carousel-indicators li {
+    background: white;
+    border: 1px solid var(--gold);
+
+}
+
+.carousel-indicators .active {
+    background: var(--gold);
+}
+
+@media(max-width:1199px){
+    .home-slider-bg {
+        height: 400px;
+     }
+    .home-slider-header{
+        font-size: 20px;
+    }
+}
+@media(max-width:1099px){
+    .home-slider-bg {
+       height: 380px;
+    }
+    .home-slider-header{
+        font-size: 20px;
+    }
+}
+@media(max-width:991px){
+    .home-slider-bg {
+        min-height: 350px;
+        background-position: top right -70px;
+        background-color: #f6f3f0;
+    }
+    .home-slider-header{
+        font-size: 18px;
+    }
+    .home-slider-description{
+        font-size: 16px;
+    }
+}
+@media(max-width:767px){
+    .home-slider-bg {
+        height: 250px;
+        background-position: top right -60px;
+    }
+    .home-slider{
+        background-color: rgba(255, 255, 255, 0.7);
+        padding-top: 10px;
+    }
+}
+@media(max-width:520px){
+    .home-slider-header{
+        font-size: 17px;
+    }
+    .home-slider-description{
+        font-size: 15px;
+        min-height: 140px;
+    }
+}
+
+/* skill test section ends */
+
+
+
+
+/* all course qualification section starts */
+
+.rpl-course-header {
+    font-size: 2.5rem;
+}
+
+.rpl-course-footer {
+    font-size: 1.5rem;
+}
+
+.course-list-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.course-list-container>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.course-list-container>li {
+    display: inline;
+}
+
+.course-item {
+    display: inline-block;
+    border: 1.5px solid #CD1D23;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+.nav-pills .active {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+
+.course-description {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(13, 58, 75, 0.7);
+    text-align: center;
+    padding: 10px 1px;
+    color: white;
+    font-size: 15px;
+    opacity: 1;
+    transition: all 0.3s;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.course-description:hover .course-hover-content {
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.course-description:hover .course-title {
+    opacity: 0;
+    transition: all 0.3s;
+    bottom: -50%;
+}
+
+.course-description:hover .course-img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.course-hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 58, 75, 0.7);
+    padding: 20px;
+    z-index: 5;
+    color: white;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.course-hover-details {
+    border: 2px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+}
+
+.course-name-list {
+    font-size: 0.875rem;
+}
+
+
+/* testimonial section starts */
+.testimonial-header {
+    font-size: 1.875rem !important;
+}
+
+.testimonial-header-description {
+    font-size: 1.125rem !important
+}
+
+.feedback-card {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    color: #414141;
+    border-image: linear-gradient(var(--brandColor), var(--blue)) 10;
+    border-width: 4px;
+    border-style: solid;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+
+}
+.feedback-card p{
+    font-size: 15px;
+}
+
+.feedback-card-left-margin {
+    margin-left: 80px;
+}
+
+.show-all-feedback-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+
+
+/* testimonial section ends */
+
+
+/* news and events section starts  */
+.news-header-top-text {
+    font-size: 1.875rem;
+}
+
+.news-header-text {
+    font-size: 2.5rem;
+}
+
+.news-card-img-container {
+    border-radius: 29px;
+}
+
+.news-publish-date {
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    color: white;
+    padding: 0px 25px;
+    font-weight: 500;
+}
+
+.news-card-header {
+    font-size: 1.125rem;
+}
+
+.news-card-description {
+    font-size: 1rem;
+    color: #5E5C5C;
+    letter-spacing: -0.05em;
+}
+
+.news-card-read-more-btn {
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    font-size: 1rem;
+    border-radius: 7px;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.news-card-read-more-btn:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+    transition: 0.3s all ease-in-out;
+}
+
+
+/* news and events section ends */
+
+/* home page css ends */
+
+
+
+/* contact us page css starts */
+
+
+.contact-us-header-bg {
+    background-image: url('/images/frontEnd/contactUs/contact-us-banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 20px;
+    background-repeat: no-repeat;
+}
+
+.contact-us-header-top {
+    font-size: 3.75rem;
+}
+
+.contact-us-header-description {
+    font-size: 1.25rem;
+}
+
+.contact-us-card {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.position-top {
+    margin-top: -90px;
+
+}
+
+.contact-us-form-header {
+    color: #414141;
+    font-size: 2.5rem;
+}
+
+.contact-us-form-input {
+    width: 100%;
+    border: 0.5px solid #b4afaf;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.contact-us-form-input:focus {
+    border: 0.5px solid var(--brandColor);
+    outline: none;
+}
+
+.contact-us-form-submit-btn {
+    display: block;
+    background-color: var(--brandColor);
+    padding: 8px 40px;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid var(--brandColor);
+
+}
+
+.contact-us-form-submit-btn:hover{
+    background: none;
+    color: var(--brandColor);
+}
+/* contact us page css ends */
+
+
+
+
+/* skill test section css starts */
+
+
+.skilltest-section-bg {
+    background-color: var(--primary-color);
+
+}
+
+
+
+/* skill test section css ends */
+
+
+/* faq page starts */
+.faq-header-bg {
+    background-image: url('/images/frontEnd/faq/faq-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    background-repeat: no-repeat;
+}
+
+.faq-header-top {
+    font-size: 3.75rem;
+    color: var(--primary-color);
+}
+
+.faq-header-description {
+    font-size: 1.875rem;
+    color: black;
+}
+
+.faq-question-container {
+
+    padding: 100px 25px 100px 25px;
+}
+
+.faq-question-title {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.card-header {
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.faq-question-title .rotate-icon {
+    color: white !important;
+}
+
+.card-header:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg);
+}
+
+.faq-footer-text {
+    font-size: 2.188rem !important;
+    padding: 0px 10px;
+}
+
+.faq-contact-us-text {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+}
+
+.faq-contact-us-btn {
+    background-color: var(--primary-color);
+    padding: 8px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+
+/* faq page ends */
+
+
+
+/* about us page starts */
+
+.about-us-top-bg {
+    background-image: url('/images/frontEnd/aboutUs/about-us-banner.png');
+    background-size: contain;
+    background-position: top right;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
+
+.about-us-top-header {
+    font-size: 2.5rem;
+}
+
+.about-us-top-header-des {
+    font-size: 1.25rem;
+    color: #414141;
+}
+
+.about-us-middle-section-bg {
+    background-image: url('/images/frontEnd/aboutUs/abbout-middle-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+}
+
+.about-us-middle-header {
+    font-size: 2.5rem;
+}
+
+
+
+
+/* about us page ends */
+
+
+
+/* why choose us page starts */
+.why-choose-us-bg {
+    background-image: url('/images/frontEnd/aboutUs/why-choose-us-bg.png');
+    background-size: cover;
+    background-position: center;
+    /* height: 600px; */
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+.why-choose-us-header {
+    font-size: 2.5rem;
+}
+
+.why-choose-us-card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* why choose us page ends */
+
+
+
+/* how rpl works page starts */
+.how-it-works-banner {
+    background-image: url('/images/frontEnd/how-it-works/header-image.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    margin-top: -20px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+.how-it-works-bottom-bg {
+    background-image: url('/images/frontEnd/how-it-works/how-it-works-bottom-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.how-it-works-banner p{
+    font-size: 1.25rem;
+
+}
+
+@media(max-width:1366px){
+    .how-it-works-bottom-bg{
+        height: 280px;
+    }
+}
+@media(max-width:1299px){
+    .how-it-works-banner{
+        height: 500px;
+        background-position: left -120px center;
+    }
+}
+@media(max-width:991px){
+    .how-it-works-banner{
+        height: 350px;
+        background-position: left -170px center;
+    }
+    .how-it-works-banner h1{
+        font-size: 35px;
+    }
+    .how-it-works-banner p{
+        font-size: 18px;
+    }
+}
+@media(max-width:767px){
+    .how-it-works-banner{
+        background-image: url('/images/frontEnd/home/hero-banner-small.png');
+        height: 350px;
+        background-position: center center;
+    }
+    .how-it-works-bottom-bg{
+        height: 250px;
+    }
+    .how-it-works-banner h1{
+        font-size: 35px;
+    }
+    .how-it-works-banner p{
+        font-size: 18px;
+    }
+}
+
+.rpl-means-header {
+    font-size: 2.5rem;
+
+}
+
+
+
+.rpl-eligible-header {
+    font-size: 2.5rem;
+}
+
+.rpl-eligible-desc {
+    font-size: 1.25rem;
+}
+
+.eligible-test-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.375rem;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-transform: capitalize;
+
+}
+
+.how-it-works-header {
+    font-size: 2.5rem;
+}
+
+.how-it-works-card {
+    background: #F1F6F9;
+    padding: 20px 10px;
+}
+
+.how-it-works-card-header {
+    font-size: 1.25rem;
+}
+
+.how-it-works-card-des {
+    /* font-size: 1.563rem; */
+    color: #282828;
+}
+
+.text-footer-header {
+    font-size: 2.5rem;
+
+}
+
+.how-it-works-footer-section-icon {
+   font-size: 3rem;
+   color: var(--primary-color);
+}
+
+/* how rpl works page ends */
+
+
+
+/*single qualification details css starts*/
+.single-course-header {
+    font-size: 1.875em;
+
+}
+
+.course-overview-section {
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.course-overview-header {
+    font-size: 1.875em;
+}
+
+.qualification-overview-name {
+    font-size: 1.375rem;
+}
+
+.get-in-touch-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    padding: 20px 15px;
+}
+
+.get-in-touch-header {
+    font-size: 1.375rem;
+}
+
+.get-in-touch-input {
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #dbdbdb !important;
+    box-sizing: border-box;
+    padding: 5px 7px;
+    display: block;
+    width: 100%;
+
+}
+
+.get-in-touch-submit-btn {
+    background-color: var(--brandColor);
+    color: white;
+    border-radius: 4px;
+    padding: 6px 5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: var(--fontBubblegum);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.qualification-overview-accordian-title {
+    border: 1px solid var(--brandColor) !important;
+    border-radius: 0 !important;
+    background-color: white;
+}
+
+.rotate-icon {
+    color: var(--primary-color);
+}
+
+.qualification-overview-accordian-title:not(.collapsed) {
+    background: linear-gradient(270deg, #cbc1c1 0.72%, #ED1C24 100%);
+    color: white;
+    font-weight: 600;
+    box-shadow: none !important;
+}
+
+.qualification-overview-accordian-title:not(.collapsed) .rotate-icon {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/* qualification details css ends*/
+
+
+
+@media (max-width: 1299px) {
+    .contact-us-header-bg {
+        padding: 150px 20px;
+    }
+}
+@media (max-width: 991px) {
+
+    .home-slider-bg:before {
+        background: rgba(0, 0, 0, .8);
+    }
+    .about-us-top-bg {
+        background-image: url('/images/frontEnd/aboutUs/about-us-top-bg.png');
+        background-size: cover;
+        background-position: top right;
+        height: 600px;
+    }
+    .contact-us-header-bg {
+        padding: 100px 20px;
+    }
+    .contact-us-header-top {
+        font-size: 45px;
+    }
+
+    .contact-us-header-description {
+        font-size: 16px;
+    }
+    .contact-card-info{
+        font-size: 14px;
+    }
+    .contact-us-card {
+        padding: 20px 10px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .summery-bg {
+        padding: 31px 0px;
+        height: 300px;
+    }
+
+    .position-top {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contact-us-header-top {
+        font-size: 40px;
+    }
+
+    .contact-us-header-description {
+        font-size: 16px;
+    }
+
+    .contact-us-form-header {
+        color: #414141;
+        font-size: 1.875rem;
+    }
+
+    .faq-header-top {
+        font-size: 2.5rem;
+    }
+
+    .faq-header-description {
+        font-size: 1.25rem;
+    }
+
+    .faq-question-container {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .faq-header-bg {
+        background-image: url('/images/frontEnd/faq/faq-bg.png');
+        background-size: cover;
+        background-position: center;
+        padding: 50px 10px;
+        background-repeat: no-repeat;
+    }
+
+    .faq-footer-text {
+        font-size: 1.875rem !important;
+        padding: 0px 10px;
+    }
+
+    .faq-contact-us-text {
+
+        font-size: 1rem;
+
+    }
+
+    .faq-contact-us-btn {
+
+        padding: 8px 20px;
+
+    }
+
+    .course-package-name {
+        font-size: 15px;
+    }
+
+    .rpl-course-header {
+        font-size: 1.875rem;
+    }
+
+    .rpl-course-footer {
+        font-size: 1rem;
+    }
+
+    .about-us-top-header {
+        font-size: 1.875rem;
+    }
+
+    .about-us-top-header-des {
+        font-size: 1rem;
+        color: #414141;
+    }
+
+    .feedback-card {
+        margin: 10px 10px;
+    }
+
+    .feedback-card-left-margin {
+        margin-left: 10px;
+    }
+
+    .show-all-feedback-btn {
+
+        font-size: 1.25rem;
+    }
+
+    .about-us-middle-header {
+        font-size: 1.563rem;
+    }
+
+    .why-choose-us-header {
+        font-size: 1.875rem;
+    }
+
+    .rpl-means-header {
+        font-size: 1.875rem;
+
+    }
+
+    .rpl-eligible-header {
+        font-size: 1.875rem;
+    }
+
+    .rpl-eligible-desc {
+        font-size: 1rem;
+    }
+
+    .eligible-test-btn {
+
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 8px 16px;
+        text-transform: capitalize;
+    }
+
+    .how-it-works-header {
+        font-size: 1.875rem;
+    }
+
+    .course-overview-header {
+        font-size: 1.5rem;
+    }
+
+    .qualification-overview-name {
+        font-size: 1.125rem;
+    }
+
+    .single-course-header {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:575px){
+    .contact-us-header-bg {
+        padding: 70px 20px;
+    }
+    .contact-form-header{
+        font-size: 30px;
+    }
+}
+
+
+/* --- QUALIFICATION PAGE CSS --- */
+.course-banner {
+    background: url('/images/frontEnd/qualifications/qualification-banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+}
+
+@media screen and (max-width: 1199px){
+    .course-banner{
+        height: 400px;
+    }
+}
+
+.qualification-link:hover {
+    text-decoration: none;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+.qualification-link:hover span{
+    color: rgb(205, 29, 35) !important;
+}
+
+.course-slider-hover-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 4px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.course-slider-hover-btn:hover{
+    text-decoration: none;
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+}
+
+
+.view-all-course-btn {
+    background-color: #fff;
+    color: var(--blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    padding: 10px 35px;
+    transition: all 0.3s ease;
+    font-family: var(--fontBubblegum);
+}
+
+.view-all-course-btn:hover{
+    text-decoration: none;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: var(--orange);
+}
+
+    .explore-link a
+    {
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    .explore-link a:hover
+    {
+        transition: all 0.3s ease;
+        color: var(--blue);
+    }
+
+.social-icon a{
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.social-icon-img{
+    height: 15px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+.social-icon a:hover .social-icon-img{
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.mega-nav-link{
+    color: #242424;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.mega-nav-link:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.course-search-input
+{
+    padding: 20px 15px !important;
+    border-radius: 8px;
+}
+.course-search-input::placeholder{
+    color: #5E5C5C;
+    font-size: 14px;
+}
+
+.qualification-search-btn{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    color: #6b6b6b;
+}
+
+.industries-skill-text-btn{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 5px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.industries-skill-text-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.home-courses-bg{
+    background: url('/images/frontEnd/home/qualification-back-image.png');
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.footer-bottom-link{
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-bottom-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.terms-conditions-content p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.privacy-policy-content p{
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.privacy-policy-content h6{
+    margin-top: 20px;
+}
+.sticky-skill-test-bar
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 50;
+}
+.sticky-skill-nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+
+.about-card-icon{
+    height: 50px;
+    margin-bottom: 10px;
+}
+.about-us-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-card-section{
+    margin-top: -110px;
+}
+
+.about-us-details{
+    font-size: 18px;
+}
+
+.course-link-card{
+
+}
+@media(max-width:1199px){
+    .about-card-section{
+        margin-top: -60px;
+    }
+}
+@media(max-width:991px){
+    .about-card-section{
+        margin-top: 20px;
+    }
+    .about-us-details{
+        font-size: 16px;
+    }
+    .about-card-text{
+        font-size: 14px;
+    }
+}
+.fixed-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.course-image{
+    height: 100%;
+    width: 100%;
+}
+
+.qualification-card-img{
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+}
+.slick-slide {
+    /* height: 350px !important;
+    width: 400px !important;
+    min-height: 350px; */
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--blue);
+}
+.about-us-img{
+    margin-left: -14px !important;
+}
+.about-img{
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+}
+.why-choose-text{
+    font-size: 15px;
+}
+.why-choose-icon{
+    width: 60px;
+    height: 70px;
+}
+
+.course-card{
+    min-height: 250px;
+}
+.know-details-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 70%;
+}
+.get-in-touch-form input::placeholder, .get-in-touch-form textarea::placeholder{
+    font-size: 14px;
+}
+.contact-us-icon{
+    height: 35px;
+    width: 35px;
+}
+.how-it-works-middle-img{
+    width: 70%;
+}
+
+
+@media(max-width:991px){
+
+}
+@media(max-width:767px){
+    .qualification-card-img{
+        height: 370px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .course-image{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .course-card{
+        min-height: 500px;
+    }
+}
+@media(max-width:575px){
+    .why-choose-icon{
+        height: 50px;
+    }
+}
+@media(max-width:425px){
+    .course-image{
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .course-card{
+        min-height: 550px;
+    }
+}
+
+.our-program-bg{
+    background-image: url('/images/frontEnd/package/package-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.package-card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px 0px;
+}
+.package-img{
+    height: 230px;
+    width: 100%;
+}
+.package-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.curve{
+    height: 70px;
+    width: 100%;
+    margin-top: -65px;
+}
+.package-details-btn a{
+    background-color: var(--brandColor);
+    border: 2px solid var(--brandColor);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.package-details-btn a:hover{
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--brandColor);
+    border: 2px solid var(--blue);
+}
+.about-learn-more-btn{
+    background-color: var(--brandColor);
+    border: 2px solid var(--brandColor);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.about-learn-more-btn:hover{
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--brandColor);
+    border: 2px solid var(--blue);
+}
+@media(max-width:991px){
+    .package-img{
+        height: 180px;
+    }
+    .curve{
+        margin-top: -50px;
+    }
+    .package-details-btn a{
+        padding: 8px 20px;
+    }
+}
+@media(max-width:767px){
+    .package-img{
+        height: 250px;
+    }
+    .curve{
+        margin-top: -70px;
+    }
+    .package-details-btn a{
+        padding: 10px 40px;
+    }
+}
+@media(max-width:575px){
+    .package-card{
+        margin: 0 70px;
+    }
+}
+@media(max-width:474px){
+    .package-card{
+        margin: 0 10px;
+    }
+    .package-img{
+        height: 220px;
+    }
+    .curve{
+        margin-top: -60px;
+    }
+}
+.package-details-banner{
+    background: url('/images/frontEnd/package/package-details-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+}
+.package-details-layout-card{
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.package-name
+{
+    min-height: 80px;
+}
+.order-submit-btn{
+    background-color: var(--brandColor);
+    color: white;
+}

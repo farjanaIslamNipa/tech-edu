@@ -1,0 +1,23 @@
+/* question list page css starts */
+.link-btn {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+.link-btn:hover {
+    color: #CD1D23;
+}
+
+.delete-btn{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: black;
+    border: none;
+
+}
+
+/* question list page css ends */
+

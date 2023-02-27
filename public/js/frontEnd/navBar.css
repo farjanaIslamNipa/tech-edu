@@ -1,0 +1,25 @@
+.nav-link-item {
+    color: #282828 !important;
+    font-size: 0.875rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    padding: 0px 15px !important;
+
+}
+
+
+.nav-link-item:hover {
+    color: var(--primary-color) !important;
+}
+
+.call-us-nav-item{
+    color: white !important;
+    font-size: 0.875rem !important;
+    background-color: var(--primary-color);
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    border-radius: 5px;
+    padding: 10px 20px !important;
+    cursor: pointer;
+
+}
